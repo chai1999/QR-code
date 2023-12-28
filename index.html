@@ -12,60 +12,53 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
     body {
-      background-color: hsl(220, 15%, 55%);
+      background-color:hsl(212, 45%, 89%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
 
     .card {
-      position: relative;
-      display: flex;
-      background-color: hsl(0, 0%, 100%);
-      width: 500px;
-      height: 600px;
-      margin: auto;
-      justify-content: center;
-    }
-
-    .image {
-      position: absolute;
-      top: 20px;
-
-    }
-    .image img {
-      width: 300px;
-      height: 300px;
-    }
-    .card .wenzi {
-      position: absolute;
-      font-size: 15px;
-      font-weight: 700;
-      color: aqua;
-      top: 340px;
-    }
-    .attribution {
-      position: absolute;
-      top: 380px;
-      font-size: 11px;
+      background-color:  hsl(0, 0%, 100%);
+      max-width: 20rem;
+      border-radius: 1.5rem;
       text-align: center;
+      margin-block: auto;
     }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
+    img {
+      width: 100%;
+      border-radius: 1.5rem;
     }
+    h2 {
+      color: hsl(218, 44%, 22%);
+        font-weight: 700;
+        margin-top: 2rem;
+        padding: 0 2rem;
+        text-align: left;
+    }
+    p {
+        color: hsl(220, 15%, 55%);
+        font-weight: 400;
+        font-size: 15px;
+        padding: 2rem;
+      }
   </style>
 </head>
 
 <body>
   <div class="card">
-    <div class="image"><img src="images\image-qr-code.png" alt=""></div>
-    <div class="wenzi">Improve your front-end skills by building projects
+    <img src="images\image-qr-code.png" alt="">
+    <h2 >Improve your front-end skills by building projects</h2>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
 
-      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
   </div>
 </body>
 
